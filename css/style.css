@@ -24,15 +24,23 @@ header{
   left: 0;
   z-index: 1000;
   padding: 0px 30px;
-  height: 70px;
-  line-height: 70px; /*height의 align을 위해서 사용함함*/
+  height: 60px;
+  line-height: 60px; /*height의 align을 위해서 사용함함*/
   background-color: #fff;
+}
+header .logo{
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 60px;
 }
 header ul{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 600px;
+}
+header ul li{
+  font-size: 1.1em;
 }
 /* header end */
 
@@ -42,7 +50,7 @@ header ul{
 
 /* swiper_section start */
 .swiper {
-  margin-top: 70px;
+  margin-top: 60px;
   width: 100%;
   height: 780px;
 }
@@ -398,22 +406,25 @@ section.fourthSection .card_box{
   justify-content: space-between;
 }
 .fourthSection .card_box .card{
-  padding: 20px 25px;
+  padding: 30px;
   margin-bottom: 15px;
-  height: 330px;
-  width: 410px;
+  height: 315px;
+  width: 400px;
   /* border-radius: 10px; */
   opacity: 0;
   transform-style: preserve-3d;
   transform: rotateX(180deg);
   transition: transform 0.6s ease, opacity 0.4s, border 0.2s;
   border: solid 1px #fff;
+  border-radius: 12px;
 }
 .fourthSection .card_box .card:hover{
-  border: solid 1px gray;
+  border: solid 1px rgb(172, 172, 172);
 }
 
 .card_box .card .img_box{
+  /* border: solid 1px red; */
+  width: 33px;
   margin-bottom: 14px;
 }
 .card_box .card .text_box{
@@ -492,3 +503,10 @@ footer nav a:hover{
   white-space: nowrap;
   border: 0;
 }
+
+
+
+
+
+
+

@@ -118,7 +118,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".thirdSection .card_box>div:nth-of-type(1)",
       start: "top 90%", 
-      end: "top 60%", 
+      end: "top 55%", 
       scrub: 1, 
       markers: false
     }
@@ -134,7 +134,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".thirdSection .card_box>div:nth-of-type(2)",
       start: "top 80%",
-      end: "top 60%", 
+      end: "top 55%", 
       scrub: 1, 
       markers: false 
     }
@@ -150,7 +150,7 @@ gsap.fromTo(
     scrollTrigger: {
       trigger: ".thirdSection .card_box>div:nth-of-type(3)",
       start: "top 70%", 
-      end: "top 60%", 
+      end: "top 55%", 
       scrub: 1, 
       markers: false 
     }
