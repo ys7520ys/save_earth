@@ -1,20 +1,8 @@
-/* noto sans Korea font import */
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Architects+Daughter&family=Do+Hyeon&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Just+Another+Hand&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-/* smooth Scroll import */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
-
 /* font */
 body, html{
   font-family: "Noto Sans KR", serif;
   font-style: normal;
 }
-
-
-
-
 
 /* header start */
 header{
@@ -25,13 +13,13 @@ header{
   z-index: 1000;
   padding: 0px 30px;
   height: 60px;
-  line-height: 60px; /*height의 align을 위해서 사용함함*/
+  line-height: 60px;
   background-color: #fff;
 }
 header .logo{
   font-size: 20px;
   font-weight: 300;
-  margin-right: 60px;
+  margin-right: 80px;
 }
 header ul{
   display: flex;
@@ -43,10 +31,6 @@ header ul li{
   font-size: 1.1em;
 }
 /* header end */
-
-
-
-
 
 /* swiper_section start */
 .swiper {
@@ -60,30 +44,22 @@ header ul li{
   align-items: center;
   background: #f0f0f0;
 }
-
 .swiper-slide img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
   color: #333;
 }
-
 .swiper-pagination-bullet {
   background: #ccc;
 }
-
 .swiper-pagination-bullet-active {
   background: #333;
 }
 /* swiper_section endd */
-
-
-
-
 
 /* first_section start */
 .firstSection{
@@ -118,12 +94,13 @@ header ul li{
   width: 620px;
   height: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 .firstSection .img_box img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border-radius: 10px; */
+  transition: filter 0.4s, scale 0.4s;
 }
 .firstSection .text_box{
   bottom: 30px;
@@ -141,7 +118,7 @@ header ul li{
   font-weight: 400;
   color: white;
 }
-.firstSection .text_box h3.card-subtitle{
+.firstSection .text_box p.card-subtitle{
   position: absolute;
   left: 0;
   top: 52px;
@@ -162,7 +139,6 @@ header ul li{
   width: 120px;
   background-color: #666;
   border: none;
-  /* border-radius: 4px; */
   color: white;
   font-size: 16px;
   font-weight: 500;
@@ -171,12 +147,8 @@ header ul li{
 .firstSection .text_box a:hover{
   background-color: white;
   color: black;
-}
-/*first_section end*/
-
-
-
-
+} 
+/* first_section end */
 
 /* second_section start */
 section.secondSection{
@@ -190,17 +162,12 @@ section.secondSection{
   width: 100%;
   height: auto;
   display: flex;
-  }
+}
 .secondSection .text_box{
   width: 35%;
   height: 100%;
   padding: 0px 20px 0px 0px;
 }
-/* .text_box h3.section-subtitle{
-  color: #333;
-  font-size: 1em;
-  font-weight: 300;
-} */
 .text_box h2.section-title{
   font-size: 60px;
   font-weight: 500;
@@ -249,13 +216,12 @@ section.secondSection{
 .secondSection .img_box div img{
   object-fit: cover;
   width: 100%;
-  /* border-radius: 10px; */
 }
 .secondSection .img_box a{
   position: absolute;
   display: block;
   text-align: center;
-  line-height: 38px; /*height의 align을 위해서 사용함함*/
+  line-height: 38px;
   left: 30px;
   bottom: 30px;
   width: 200px;
@@ -271,12 +237,7 @@ section.secondSection{
   background-color: white;
   color: black;
 }
-
 /* second_section end */
-
-
-
-
 
 /* third_section start */
 section.thirdSection{
@@ -306,7 +267,6 @@ section.thirdSection{
 .thirdSection .card_box>div{
   height: 550px;
   width: 33%;
-  /* border: solid 1px gray; */
 }
 .thirdSection .card_box>div .img_box{
   height: 50%;
@@ -316,7 +276,6 @@ section.thirdSection{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  /* border-radius: 10px; */
 }
 .thirdSection .text_box{
   height: 50%;
@@ -330,7 +289,7 @@ section.thirdSection{
   margin-bottom: 15px;
   font-weight: 500;
 }
-.thirdSection .text_box h3.card-subtitle{
+.thirdSection .text_box p.card-subtitle{
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -338,26 +297,20 @@ section.thirdSection{
   color: #333;
 }
 .thirdSection .text_box a{
+  width: 150px;
   font-size: 16px;
   font-weight: 400;
-  height: 20px; 
   background-color: white;
   border: none;
   text-align: left;
-}
-.thirdSection .text_box a img{
-  margin-bottom: 4px;
-  margin-left: 10px;
+  text-decoration: underline;
 }
 /* third_section end */
-
-
-
-
 
 /* banner_section start */
 section.bannerSection{
   position: relative;
+  width: 100%;
   height: 380px;
   margin: auto;
   text-align: center;
@@ -373,10 +326,6 @@ section.bannerSection .section-title{
   color: #3c3c3c
 }
 /* banner_section end */
-
-
-
-
 
 /* fourth_section start */
 section.fourthSection{
@@ -406,11 +355,10 @@ section.fourthSection .card_box{
   justify-content: space-between;
 }
 .fourthSection .card_box .card{
-  padding: 30px;
+  padding: 20px 0px 0px 30px;
   margin-bottom: 15px;
   height: 315px;
   width: 400px;
-  /* border-radius: 10px; */
   opacity: 0;
   transform-style: preserve-3d;
   transform: rotateX(180deg);
@@ -421,9 +369,7 @@ section.fourthSection .card_box{
 .fourthSection .card_box .card:hover{
   border: solid 1px rgb(172, 172, 172);
 }
-
 .card_box .card .img_box{
-  /* border: solid 1px red; */
   width: 33px;
   margin-bottom: 14px;
 }
@@ -438,7 +384,7 @@ section.fourthSection .card_box{
   font-weight: 500;
   margin-bottom: 17px;
 }
-.card_box .card .text_box h3.card-subtitle{
+.card_box .card .text_box p.card-subtitle{
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -451,10 +397,6 @@ section.fourthSection .card_box{
   text-decoration: underline;
 }
 /* fourth_section end */
-
-
-
-
 
 /* footer start*/
 footer{
@@ -486,12 +428,7 @@ footer nav a:hover{
 }
 /* footer end */
 
-
-
-
-
 /* sr-only Style */
-/* 접근성을 준수하기 위해서 사용한다. */
 .sr-only {
   position: absolute;
   width: 1px;
