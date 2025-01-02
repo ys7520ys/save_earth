@@ -34,16 +34,13 @@
     width: 200px;
   }
   header ul li{
-    font-size: 1.1em;
+    font-size: 0px;
     height: 100%;
   }
   header ul li a{
   }
   /* header end */
 
-  .swiper{
-    display: none;
-  }
 
   .firstSection{
     display: flex;
@@ -62,30 +59,35 @@
     font-weight: 500;
     font-size: 5vw;
     color: #333;
+    border: solid 1px blue;
   }
   .firstSection h3.section-subtitle{
     text-align: center;
     font-weight: 400;
     font-size: 2vw;
     color: #333;
+    border: solid 1px red;
   }
   .firstSection div.parent_box{
     margin-top: 4vw;
-    width: 100%;
+    width: 85%;
     height: auto;
-    padding: 20px 30px;
+    padding: 0px;
     display: -webkit-flex;
     display: block;
+    gap: 10px;
     border: solid 1px red;
   }
   .firstSection .img_box{
     position: relative;
     width: 100%;
-    height: 33vh;
+    height: 50vw;
     overflow: hidden;
     border-radius: 10px;
     transition: filter 0.4s ease, box-shadow 0.4s ease, outline 0.4s ease;
-    margin-bottom: 3vw;
+  }
+  .firstSection .img_box:first-of-type{
+    margin-bottom: 15px;
   }
   .firstSection .img_box img{
     width: 100%;
@@ -101,6 +103,7 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.4s ease;
+    border: solid 1px green;
   }
   .firstSection .text_box h2.card-title{
     position: absolute;
@@ -111,11 +114,12 @@
     font-weight: 400;
     color: white;
     transition: color 0.4s ease;
+    border: solid 1px red;
   }
   .firstSection .text_box p.card-subtitle{
     position: absolute;
     left: 3vw;
-    top: 77px;
+    top: 8vw;
     width: calc(100% - 60px);
     text-align: left;
     font-size: 2.4vw;
@@ -123,21 +127,23 @@
     font-weight: 400;
     color: #ddd;
     transition: color 0.4s ease;
+    border: solid 1px red;
+
   }
   .firstSection .text_box a{
     position: absolute;
     display: block;
     text-align: center;
-    left: 30px;
-    bottom: 30px;
-    height: 40px;
-    line-height: 38px;
-    width: 120px;
+    left: 3vw;
+    bottom: 3vw;
+    height: 6vw;
+    line-height: 6vw;
+    width: 20vw;
     background-color: #666;
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 16px;
+    font-size: 2.3vw;
     font-weight: 500;
     transition: background-color 0.4s ease, color 0.4s ease;
   }
