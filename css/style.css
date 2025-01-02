@@ -15,32 +15,45 @@ header{
   height: 60px;
   line-height: 60px;
   background-color: #fff;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
 }
 header .logo{
   font-size: 20px;
   font-weight: 300;
-  margin-right: 80px;
+  float: left;
+  margin-left: 60px;
 }
 header ul{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 600px;
+  width: 600px;
 }
 header ul li{
   font-size: 1.1em;
+  height: 100%;
+}
+header ul li a{
 }
 /* header end */
 
 /* swiper_section start */
 .swiper {
-  margin-top: 60px;
   width: 100%;
   height: 780px;
 }
 .swiper-slide {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
   background: #f0f0f0;
 }
@@ -86,63 +99,72 @@ header ul li{
   height: 450px;
   width: 100%;
   margin-top: 70px;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 .firstSection .img_box{
   position: relative;
   width: 620px;
   height: 100%;
-  box-sizing: border-box;
   overflow: hidden;
+  border-radius: 10px;
+  transition: filter 0.4s ease, box-shadow 0.4s ease, outline 0.4s ease;
 }
 .firstSection .img_box img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: filter 0.4s, scale 0.4s;
+  transition: scale 0.4s ease, filter 0.4s ease;
 }
 .firstSection .text_box{
-  bottom: 30px;
-  left: 30px;
+  bottom: 0px;
+  left: 0px;
   position: absolute;
-  height: 192px;
-  width: 560px;
+  height: 55%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.4s ease;
 }
 .firstSection .text_box h2.card-title{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 30px;
   text-align: left;
   font-size: 38px;
   font-weight: 400;
   color: white;
+  transition: color 0.4s ease;
 }
 .firstSection .text_box p.card-subtitle{
   position: absolute;
-  left: 0;
-  top: 52px;
+  left: 30px;
+  top: 77px;
+  width: 540px;
   text-align: left;
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
   color: #ddd;
+  transition: color 0.4s ease;
 }
 .firstSection .text_box a{
   position: absolute;
   display: block;
   text-align: center;
-  left: 0;
-  bottom: 0;
+  left: 30px;
+  bottom: 30px;
   height: 40px;
   line-height: 38px;
   width: 120px;
   background-color: #666;
   border: none;
+  border-radius: 5px;
   color: white;
   font-size: 16px;
   font-weight: 500;
-  transition: background-color 0.2s;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .firstSection .text_box a:hover{
   background-color: white;
@@ -161,6 +183,7 @@ section.secondSection{
 .secondSection>div{
   width: 100%;
   height: auto;
+  display: -webkit-flex;
   display: flex;
 }
 .secondSection .text_box{
@@ -212,10 +235,15 @@ section.secondSection{
   position: relative;
   width: 50%;
   height: 100%;
+  border-radius: 10px;
+  outline: solid 5px white;
+  transition: scale 0.4s, filter 0.4s, box-shadow 0.4s, outline 0.4s;
 }
 .secondSection .img_box div img{
   object-fit: cover;
+  height: 100%;
   width: 100%;
+  transition: filter 0.4s ease, scale 0.4s;
 }
 .secondSection .img_box a{
   position: absolute;
@@ -230,8 +258,9 @@ section.secondSection{
   color: white;
   font-size: 16px;
   border: none;
+  border-radius: 5px;
   font-weight: 400;
-  transition: background-color 0.2s;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 .secondSection .img_box a:hover{
   background-color: white;
@@ -264,30 +293,43 @@ section.thirdSection{
   gap: 10px;
   justify-content: space-between;
 }
-.thirdSection .card_box>div{
+.thirdSection .card_box .deco_{
+  background-color: #fff;
   height: 550px;
   width: 33%;
+  border-radius: 10px;
+  transition: scale 0.4s, filter 0.4s, outline 0.4s;
 }
-.thirdSection .card_box>div .img_box{
+.thirdSection .card_box .deco_ .img_box{
   height: 50%;
   width: 100%;
+  border-radius: 7px 7px 0px 0px;
+  overflow: hidden;
+  transition: outline 0.4s ease;
 }
-.thirdSection .card_box div .img_box img{
+.thirdSection .card_box .deco_ .img_box img{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-radius: 7px 7px 0px 0px;
+  transition: scale 0.4s, filter 0.4s;
 }
 .thirdSection .text_box{
   height: 50%;
   padding: 27px 10px;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
   box-sizing: border-box;
+  border-radius: 0px 0px 10px 10px;
+  transition: background-color 0.4s ease, outline 0.4s ease;
 }
 .thirdSection .text_box h2.card-title{
   font-size: 22px;
   margin-bottom: 15px;
   font-weight: 500;
+  transition: color 0.4s ease;
 }
 .thirdSection .text_box p.card-subtitle{
   font-weight: 400;
@@ -295,15 +337,17 @@ section.thirdSection{
   line-height: 1.5;
   margin-bottom: 60px;
   color: #333;
+  transition: color 0.4s ease;
 }
 .thirdSection .text_box a{
   width: 150px;
   font-size: 16px;
   font-weight: 400;
-  background-color: white;
   border: none;
+  padding: 10px 0px;
   text-align: left;
   text-decoration: underline;
+  transition: color 0.4s ease;
 }
 /* third_section end */
 
@@ -321,6 +365,7 @@ section.bannerSection .section-title{
   font-weight: 500;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   font-size: 100px;
   color: #3c3c3c
@@ -350,51 +395,57 @@ section.fourthSection h3.section-subtitle{
 section.fourthSection .card_box{
   margin-top: 30px;
   height: auto;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
 }
 .fourthSection .card_box .card{
   padding: 20px 0px 0px 30px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   height: 315px;
   width: 400px;
   opacity: 0;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
-  transition: transform 0.6s ease, opacity 0.4s, border 0.2s;
-  border: solid 1px #fff;
-  border-radius: 12px;
-}
-.fourthSection .card_box .card:hover{
-  border: solid 1px rgb(172, 172, 172);
+  -webkit-transition: transform 0.6s ease, opacity 0.4s, border 0.2s, box-shadow 0.4s, scale 0.2s;
+  transition: transform 0.6s ease, opacity 0.4s, border 0.2s, box-shadow 0.4s, scale 0.2s, background-color 0.4s ease;
+  border-radius: 10px;
 }
 .card_box .card .img_box{
   width: 33px;
   margin-bottom: 14px;
+  transition: filter 0.4s ease;
 }
 .card_box .card .text_box{
   position: relative;
   margin-bottom: 12px;
-  width: 360px;
+  width: 345px;
   height: 230px;
 }
 .card_box .card .text_box h2.card-title{
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 17px;
+  transition: color 0.4s ease;
 }
 .card_box .card .text_box p.card-subtitle{
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: #333;
+  transition: color 0.4s ease;
 }
 .card_box .card .text_box a{
   position: absolute;
   font-size: 16px;
   bottom: 10px;
   text-decoration: underline;
+  transition: color 0.4s ease;
 }
 /* fourth_section end */
 
@@ -407,7 +458,9 @@ footer > div{
   height: 300px;
   width: 1260px;
   margin: 0 auto;
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
   padding: 50px 0px;
 }
@@ -447,3 +500,49 @@ footer nav a:hover{
 
 
 
+
+
+
+
+
+/* 말풍선용 스타일 */
+.speech_bubble{
+  width: 260px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  opacity: 0;
+  transition: transform 0.5s, top 0.3s, left 0.3s, opacity 0.2s;
+  pointer-events: none;
+}
+.bubble_area{
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 260px;
+  height: 50px;
+  background-color: #3c3c3c;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bubble_area p{
+  font-weight: 400;
+  color: #fff;
+}
+.triangle{
+  position: absolute;
+  top: 8px;
+  left: 120px;
+  width: 30px;
+  height: 30px;
+  background-color: #3c3c3c;
+  rotate: 45deg;
+  border-radius: 2px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
+}
