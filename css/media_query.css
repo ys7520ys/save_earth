@@ -57,31 +57,29 @@
   .firstSection h2.section-title{
     text-align: center;
     font-weight: 500;
-    font-size: 5vw;
+    font-size: 6vw;
+    margin-bottom: 2vw;
     color: #333;
-    border: solid 1px blue;
   }
   .firstSection h3.section-subtitle{
     text-align: center;
     font-weight: 400;
-    font-size: 2vw;
+    font-size: 2.4vw;
     color: #333;
-    border: solid 1px red;
   }
   .firstSection div.parent_box{
-    margin-top: 4vw;
-    width: 85%;
+    margin-top: 6vw;
+    width: 90%;
     height: auto;
     padding: 0px;
     display: -webkit-flex;
     display: block;
     gap: 10px;
-    border: solid 1px red;
   }
   .firstSection .img_box{
     position: relative;
     width: 100%;
-    height: 50vw;
+    height: 55vw;
     overflow: hidden;
     border-radius: 10px;
     transition: filter 0.4s ease, box-shadow 0.4s ease, outline 0.4s ease;
@@ -103,32 +101,28 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color 0.4s ease;
-    border: solid 1px green;
   }
   .firstSection .text_box h2.card-title{
     position: absolute;
-    top: 2.4vw;
+    top: 0vw;
     left: 3vw;
     text-align: left;
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: 400;
     color: white;
     transition: color 0.4s ease;
-    border: solid 1px red;
   }
   .firstSection .text_box p.card-subtitle{
     position: absolute;
     left: 3vw;
     top: 8vw;
-    width: calc(100% - 60px);
+    width: 80vw;
     text-align: left;
-    font-size: 2.4vw;
+    font-size: 3vw;
     line-height: 1.5;
     font-weight: 400;
     color: #ddd;
     transition: color 0.4s ease;
-    border: solid 1px red;
-
   }
   .firstSection .text_box a{
     position: absolute;
