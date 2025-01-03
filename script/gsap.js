@@ -333,8 +333,8 @@ mm.add("(max-width: 768px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".thirdSection .section-title, .thirdSection .section-subtitle",
-        start: "top 90%",
-        end: "top 80%", 
+        start: "top 80%",
+        end: "top 70%", 
         scrub: 1, 
         markers: false,
       }
@@ -349,8 +349,8 @@ mm.add("(max-width: 768px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".thirdSection .card_box>div:nth-of-type(1)",
-        start: "top 90%", 
-        end: "top 80%", 
+        start: "top 80%", 
+        end: "top 70%", 
         scrub: 1, 
         markers: false,
       }
@@ -365,8 +365,8 @@ mm.add("(max-width: 768px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".thirdSection .card_box>div:nth-of-type(2)",
-        start: "top 90%",
-        end: "top 80%", 
+        start: "top 80%",
+        end: "top 70%", 
         scrub: 1, 
         markers: false,
       }
@@ -381,8 +381,8 @@ mm.add("(max-width: 768px)",() => {
       duration: 1, 
       scrollTrigger: {
         trigger: ".thirdSection .card_box>div:nth-of-type(3)",
-        start: "top 90%", 
-        end: "top 80%", 
+        start: "top 80%", 
+        end: "top 70%", 
         scrub: 1, 
         markers: false,
       }
