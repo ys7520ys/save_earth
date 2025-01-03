@@ -51,7 +51,7 @@
     height: auto;
     width: 100%;
     margin: auto;
-    padding: 10vw 0vw;
+    padding: 30vw 0vw;
     background-color: #fff;
   }
   .firstSection h2.section-title{
@@ -167,7 +167,7 @@
     height: auto;
     width: 100%;
     margin: auto;
-    padding: 10vw 0vw;
+    padding: 30vw 0vw;
     background-color: rgba(0, 0, 0, 0);
   }
   .secondSection .parent_box{
@@ -278,7 +278,7 @@
     margin: auto;
     width: 100%;
     height: auto;
-    padding: 10vw 0vw;
+    padding: 30vw 0vw;
     background-color: #fff;
   }
   .thirdSection h2.section-title{
@@ -372,7 +372,7 @@
     height: auto;
     width: 100%;
     margin: 0 auto;
-    padding-top: 100px;
+    padding: 30vw 0vw;
     background-color: #fff;
     border: solid 1px red;
   }
