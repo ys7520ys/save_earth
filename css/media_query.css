@@ -15,6 +15,9 @@
     line-height: 60px;
     background-color: #fff;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateZ(0); /* GPU 가속 */
+    backface-visibility: hidden; /* 렌더링 최적화 */
+    will-change: transform; /* 스크롤 최적화 */
   }
   header .logo{
     font-size: 20px;
