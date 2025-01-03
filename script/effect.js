@@ -40,7 +40,6 @@ $('header ul li').on('mouseenter', function() {
     $('.speech_bubble h2').text('캠페인 섹션으로 스크롤됩니다'); // li의 값에 따라서 "텍스트"를 변경
     setTimeout(function(){
       $('.speech_bubble').css({
-        'left': '65%',
         'top': '120px'
       });
     },200)
@@ -211,98 +210,83 @@ $('.fourthSection .card').on('mouseleave', function() {
 
 
 
-$('.thirdSection .card_box>div').on('mouseenter', function(){
-  $(this).css({
-
-  })
-})
-$('.thirdSection .card_box>div').on('mouseout', function(){
-  $(this).css({
-
-  })
-})
 
 
 
 
 
+// $('header ul li').on('mouseenter', function() {
+//   var index = $(this).index(); // li의 index
 
-
-
-
-
-$('header ul li').on('mouseenter', function() {
-  var index = $(this).index(); // li의 index
-
-  $('.speech_bubble').stop(true, true).css('opacity', '1'); // 기존 애니메이션 정지
+//   $('.speech_bubble').stop(true, true).css('opacity', '1'); // 기존 애니메이션 정지
   
-  if (index === 0) {
-    $('.speech_bubble').css({
-      'left': '36%',
-    });
-    $('.speech_bubble p').text('이야기 섹션으로 스크롤됩니다');
-    setTimeout(function(){
-      $('.speech_bubble').css({
-        'top': '120px'
-      });
-    },200)
-  } else if (index === 1) {
-    $('.speech_bubble').css({
-      'left': '46%',
-    });
-    $('.speech_bubble p').text('위기 섹션으로 스크롤됩니다');
-    setTimeout(function(){
-      $('.speech_bubble').css({
-        'top': '120px'
-      });
-    },200)
-  } else if (index === 2) {
-    $('.speech_bubble').css({
-      'left': '56%',
-    });
-    $('.speech_bubble p').text('상황 섹션으로 스크롤됩니다');
-    setTimeout(function(){
-      $('.speech_bubble').css({
-        'top': '120px'
-      });
-    },200)
-  } else if (index === 3) {
-    $('.speech_bubble').css({
-      'left': '65%',
-    });
-    $('.speech_bubble p').text('캠페인 섹션으로 스크롤됩니다');
-    setTimeout(function(){
-      $('.speech_bubble').css({
-        'left': '65%',
-        'top': '120px'
-      });
-    },200)
-  }
-});
-$('header ul').on('mouseleave', function() {
-  $('.speech_bubble').stop(true, true).css({
-    'top': '-100px',
-    'opacity': '0'
-  });
-});
+//   if (index === 0) {
+//     $('.speech_bubble').css({
+//       'left': '36%',
+//     });
+//     $('.speech_bubble p').text('이야기 섹션으로 스크롤됩니다');
+//     setTimeout(function(){
+//       $('.speech_bubble').css({
+//         'top': '120px'
+//       });
+//     },200)
+//   } else if (index === 1) {
+//     $('.speech_bubble').css({
+//       'left': '46%',
+//     });
+//     $('.speech_bubble p').text('위기 섹션으로 스크롤됩니다');
+//     setTimeout(function(){
+//       $('.speech_bubble').css({
+//         'top': '120px'
+//       });
+//     },200)
+//   } else if (index === 2) {
+//     $('.speech_bubble').css({
+//       'left': '56%',
+//     });
+//     $('.speech_bubble p').text('상황 섹션으로 스크롤됩니다');
+//     setTimeout(function(){
+//       $('.speech_bubble').css({
+//         'top': '120px'
+//       });
+//     },200)
+//   } else if (index === 3) {
+//     $('.speech_bubble').css({
+//       'left': '65%',
+//     });
+//     $('.speech_bubble p').text('캠페인 섹션으로 스크롤됩니다');
+//     setTimeout(function(){
+//       $('.speech_bubble').css({
+//         'left': '65%',
+//         'top': '120px'
+//       });
+//     },200)
+//   }
+// });
+// $('header ul').on('mouseleave', function() {
+//   $('.speech_bubble').stop(true, true).css({
+//     'top': '-100px',
+//     'opacity': '0'
+//   });
+// });
 
 
-$('header .logo a').on('mouseenter',function() {
-  $('.speech_bubble').stop(true, true).css({
-    'left': '140px',
-  });
-  $('.speech_bubble p').text('최상단으로 스크롤됩니다');
-  setTimeout(function(){
-    $('.speech_bubble').stop(true, true).css({
-      'top': '120px',
-      'opacity': '1',
-    });
-  },200)
-})
-$('header .logo a').on('mouseout',function() {
-  $('.speech_bubble').stop(true, true).css({
-    'top': '-100px',
-    'left': '140px',
-    'opacity': '1'
-  });
-})
+// $('header .logo a').on('mouseenter',function() {
+//   $('.speech_bubble').stop(true, true).css({
+//     'left': '140px',
+//   });
+//   $('.speech_bubble p').text('최상단으로 스크롤됩니다');
+//   setTimeout(function(){
+//     $('.speech_bubble').stop(true, true).css({
+//       'top': '120px',
+//       'opacity': '1',
+//     });
+//   },200)
+// })
+// $('header .logo a').on('mouseout',function() {
+//   $('.speech_bubble').stop(true, true).css({
+//     'top': '-100px',
+//     'left': '140px',
+//     'opacity': '1'
+//   });
+// })

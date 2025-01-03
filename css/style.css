@@ -79,6 +79,7 @@ header ul li{
   margin: auto;
   padding: 170px 0px 220px;
   background-color: #fff;
+  overflow: hidden;
 }
 .firstSection h2.section-title{
   text-align: center;
@@ -178,6 +179,7 @@ section.secondSection{
   margin: auto;
   padding: 180px 0px 190px;
   /* background-color: #fff; */
+  overflow: hidden;
 }
 .secondSection>div{
   width: 100%;
@@ -275,6 +277,7 @@ section.thirdSection{
   height: 1000px;
   padding-top: 130px;
   background-color: #fff;
+  overflow: hidden;
 }
 .thirdSection h2.section-title{
   text-align: center;
@@ -359,6 +362,7 @@ section.bannerSection{
   height: 380px;
   margin: auto;
   text-align: center;
+  overflow: hidden;
   overflow: hidden;
 }
 section.bannerSection .section-title{
