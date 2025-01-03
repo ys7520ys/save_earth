@@ -12,7 +12,8 @@ gsap.fromTo(
     start: "top 70%",
     end: "top 50%", 
     scrub: 1,
-    markers: false 
+    markers: false,
+    invalidateOnRefresh: true,// 모바일 가로
   }
 }
 );
@@ -28,7 +29,8 @@ gsap.fromTo(
       start: "top 90%",
       end: "top 60%", 
       scrub: 1, 
-      markers: false 
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
 );
@@ -44,7 +46,8 @@ gsap.fromTo(
       start: "top 90%",
       end: "top 60%", 
       scrub: 1, 
-      markers: false 
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
 );
@@ -63,7 +66,8 @@ gsap.fromTo(
     start: "top 70%", 
     end: "top 60%", 
     scrub: 1,
-    markers: false 
+    markers: false,
+    invalidateOnRefresh: true,// 모바일 가로
   }
 }
 );
@@ -79,7 +83,8 @@ gsap.fromTo(
       start: "top 70%", 
       end: "top 60%", 
       scrub: 1, 
-      markers: false 
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
 );
@@ -98,7 +103,8 @@ gsap.fromTo(
       start: "top 90%",
       end: "top 30%", 
       scrub: 1, 
-      markers: false 
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
 );
@@ -114,7 +120,8 @@ gsap.fromTo(
       start: "top 95%", 
       end: "top 65%", 
       scrub: 1, 
-      markers: false
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
 );
@@ -130,7 +137,8 @@ gsap.fromTo(
       start: "top 85%",
       end: "top 65%", 
       scrub: 1, 
-      markers: false 
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
 );
@@ -146,7 +154,8 @@ gsap.fromTo(
       start: "top 75%", 
       end: "top 65%", 
       scrub: 1, 
-      markers: false 
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
 );
@@ -166,7 +175,8 @@ gsap.fromTo(
       start: "top 65%",
       end: "top 60%", 
       scrub: 1,
-      markers: false 
+      markers: false,
+      invalidateOnRefresh: true,// 모바일 가로
     }
   }
   );
@@ -177,6 +187,7 @@ gsap.to(".fourthSection .card:nth-of-type(1), .fourthSection .card:nth-of-type(2
     end: "top 70%", 
     scrub: true, 
     markers: false,
+    invalidateOnRefresh: true,// 모바일 가로
   },
   rotateX: 0, 
   opacity: 1
@@ -188,7 +199,8 @@ gsap.to(".fourthSection .card:nth-of-type(4), .fourthSection .card:nth-of-type(5
     start: "top 80%", 
     end: "top 70%", 
     scrub: true, 
-    markers: false, 
+    markers: false,
+    invalidateOnRefresh: true,// 모바일 가로
   },
   rotateX: 0, 
   opacity: 1

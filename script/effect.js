@@ -83,7 +83,7 @@ $('header .logo a').on('mouseout',function() {
 $('.firstSection .text_box a').on('mouseenter', function() {
   // 부모 중 .img_box를 찾은 후 내부의 <img> 요소 선택
   $(this).parents('.img_box').css({
-    'box-shadow': '0px 15px 15px rgba(0, 0, 0, 0.5)',
+    // 'box-shadow': '0px 15px 15px rgba(0, 0, 0, 0.5)',
     'outline':'solid 5px #3c3c3c'
   });
   $(this).parents('.img_box').children('img').css({
@@ -97,8 +97,8 @@ $('.firstSection .text_box a').on('mouseenter', function() {
 $('.firstSection .text_box a').on('mouseout', function() {
   // 부모 중 .img_box를 찾은 후 내부의 <img> 요소 선택
   $(this).parents('.img_box').css({
-    'box-shadow': 'none',
-    'outline':'solid 0px white'
+    // 'box-shadow': 'none',
+    'outline':'solid 0px rgba(0,0,0,0)'
   });
   $(this).parents('.img_box').children('img').css({
     'scale':'1',
@@ -115,7 +115,6 @@ $('.firstSection .text_box a').on('mouseout', function() {
 $('.secondSection .img_box a').on('mouseenter', function() {
   // 부모 중 .img_box를 찾은 후 내부의 <img> 요소 선택
   $(this).closest('div').css({
-    'box-shadow': '0px 15px 15px rgba(0, 0, 0, 0.5)',
     'outline':'solid 5px #3c3c3c'
   });
   $(this).siblings('img').css({
@@ -126,8 +125,7 @@ $('.secondSection .img_box a').on('mouseenter', function() {
 $('.secondSection .img_box a').on('mouseout', function() {
   // 부모 중 .img_box를 찾은 후 내부의 <img> 요소 선택
   $(this).closest('div').css({
-    'box-shadow': 'none',
-    'outline':'solid 5px white'
+    'outline':'solid 5px rgba(0,0,0,0)'
   });
   $(this).siblings('img').css({
     'filter':'invert(0)',
@@ -152,7 +150,6 @@ $('.thirdSection .card_box a').on('mouseenter', function() {
   $(this).parents('.text_box').css({
     'background-color':'#3c3c3c',
     // 'outline':'solid 5px #3c3c3c',
-    'box-shadow': '0px 15px 15px rgba(0, 0, 0, 0.5)'
   })
   $(this).parents('.text_box').find('h2, p, a').css({
     'color':'white'
@@ -170,7 +167,6 @@ $('.thirdSection .card_box a').on('mouseout', function() {
   });
   $(this).parents('.text_box').css({
     'background-color':'rgba(0,0,0,0)',
-    'box-shadow': 'none'
   })
   $(this).parents('.text_box').find('h2, p, a').css({
     'color':'black'
@@ -188,7 +184,7 @@ $('.fourthSection .card a').on('mouseenter', function() {
   // 현재 이벤트가 발생한 .card 내부의 .img_box와 .text_box만 선택
   $(this).parents('.card').css({
     // 'border':'solid 1px rgb(172, 172, 172)',
-    'box-shadow': '0px 10px 15px rgba(0, 0, 0, 0.3)', 
+    // 'box-shadow': '0px 10px 15px rgba(0, 0, 0, 0.3)', 
     'background-color':'#3c3c3c'
   });
   $(this).parents('.card').children('.text_box').children('h2,p,a').css({
@@ -202,7 +198,7 @@ $('.fourthSection .card').on('mouseleave', function() {
   // 현재 이벤트가 발생한 .card 내부의 .img_box와 .text_box만 선택
   $(this).css({
     // 'border':'solid 1px #fff',
-    'box-shadow': '0px 10px 15px rgba(0, 0, 0, 0)',
+    // 'box-shadow': '0px 10px 15px rgba(0, 0, 0, 0)',
     'background-color':'rgba(0,0,0,0)'
   });
   $(this).children('.text_box').children('h2,p,a').css({

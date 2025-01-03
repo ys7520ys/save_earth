@@ -111,7 +111,7 @@ header ul li a{
   overflow: hidden;
   border-radius: 10px;
   transition: filter 0.4s ease, box-shadow 0.4s ease, outline 0.4s ease;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
 }
 .firstSection .img_box img{
   width: 100%;
@@ -239,7 +239,7 @@ section.secondSection{
   border-radius: 10px;
   outline: solid 5px rgba(0, 0, 0, 0);
   transition: scale 0.4s, filter 0.4s, box-shadow 0.4s, outline 0.4s;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
 }
 .secondSection .img_box div img{
   object-fit: cover;
@@ -301,7 +301,7 @@ section.thirdSection{
   width: 32%;
   border-radius: 10px;
   transition: scale 0.4s, filter 0.4s, outline 0.4s;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
 }
 .thirdSection .card_box .deco_ .img_box{
   height: 50%;
@@ -418,6 +418,7 @@ section.fourthSection .card_box{
   -webkit-transition: transform 0.6s ease, opacity 0.4s, border 0.2s, box-shadow 0.4s, scale 0.2s;
   transition: transform 0.6s ease, opacity 0.4s, border 0.2s, box-shadow 0.4s, scale 0.2s, background-color 0.4s ease;
   border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); 
 }
 .card_box .card .img_box{
   width: 33px;
