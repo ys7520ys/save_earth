@@ -4,6 +4,7 @@
 } 
 @media (max-width: 1000px) {
   header{
+    display: none;
     width: 100%;
     position: fixed;
     top: 0;
