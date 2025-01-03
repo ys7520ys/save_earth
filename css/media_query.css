@@ -1,5 +1,5 @@
 /* 모바일 스타일일 */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
 
 } 
 @media (max-width: 1000px) {
@@ -85,7 +85,7 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
   }
   .firstSection .img_box:first-of-type{
-    margin-bottom: 15px;
+    margin-bottom: 3vw;
   }
   .firstSection .img_box img{
     width: 100%;
@@ -233,7 +233,7 @@
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
   }
   .secondSection .img_box>div:nth-of-type(1){
-    margin-bottom: 10px
+    margin-bottom: 3vw;
   }
   .secondSection .img_box div img{
     object-fit: cover;
@@ -304,6 +304,8 @@
     margin: 0 auto;
     border-radius: 10px;
     transition: scale 0.4s, filter 0.4s, outline 0.4s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
+
   }
   .thirdSection .card_box .deco_ .img_box{
     height: 60%;
@@ -311,7 +313,6 @@
     border-radius: 7px;
     overflow: hidden;
     transition: outline 0.4s ease;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3); 
   }
   .thirdSection .card_box .deco_ .img_box img{
     height: 100%;

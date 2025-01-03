@@ -111,6 +111,7 @@ header ul li a{
   overflow: hidden;
   border-radius: 10px;
   transition: filter 0.4s ease, box-shadow 0.4s ease, outline 0.4s ease;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
 }
 .firstSection .img_box img{
   width: 100%;
@@ -178,7 +179,7 @@ section.secondSection{
   width: 1260px;
   margin: auto;
   padding: 180px 0px 190px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .secondSection>div{
   width: 100%;
@@ -236,8 +237,9 @@ section.secondSection{
   width: 50%;
   height: 100%;
   border-radius: 10px;
-  outline: solid 5px white;
+  outline: solid 5px rgba(0, 0, 0, 0);
   transition: scale 0.4s, filter 0.4s, box-shadow 0.4s, outline 0.4s;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 .secondSection .img_box div img{
   object-fit: cover;
@@ -296,9 +298,10 @@ section.thirdSection{
 .thirdSection .card_box .deco_{
   background-color: #fff;
   height: 550px;
-  width: 33%;
+  width: 32%;
   border-radius: 10px;
   transition: scale 0.4s, filter 0.4s, outline 0.4s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); 
 }
 .thirdSection .card_box .deco_ .img_box{
   height: 50%;
